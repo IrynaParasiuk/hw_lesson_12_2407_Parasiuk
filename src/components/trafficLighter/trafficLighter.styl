@@ -1,0 +1,30 @@
+$lightsSize=50px;
+$lighterBaseBorderColor=#353535;
+
+.traffic-lighter
+	width 80px
+	margin 0 auto
+	border 1px solid $lighterBaseBorderColor
+	&__active
+		.traffic-lighter_switcher
+			background red
+
+	&_switcher
+		width 60px
+		margin 10px auto
+		text-align center
+		transition background 0.5s
+
+	&_lights
+		width $lightsSize
+		height $lightsSize
+		border-radius 50%
+		margin 15px auto
+		background #d6d6d6
+		transition background 0.5s
+		&__red^[1]__active
+			background #cf001a
+		&__yellow^[1]__active
+			background #ffff00
+		&__green^[1]__active
+			background #00b400
